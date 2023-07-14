@@ -299,7 +299,7 @@ body {
 
 @media screen and (max-width: 590px) {
     .about-content {
-        font-size: 0.95rem;
+        font-size: 0.85rem;
     }
     .pageIntro {
         margin-left: 320px;

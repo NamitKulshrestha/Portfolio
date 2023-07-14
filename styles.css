@@ -1,0 +1,457 @@
+body {
+    background-image: url(Images/background.jpg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    overflow: auto;
+}
+
+.pageDiv {
+    background-color: rgba(252, 252, 252, 0.24);
+    /* opacity: 50%; */
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    overflow: auto;
+    z-index: 0;
+}
+
+/* .pageIntro {
+    position: relative;
+    max-width: 100%;
+    max-height: 100vh;
+} */
+
+/********** Navbar **********/
+.top-bar {
+    padding: 1rem;
+    z-index: 100;
+}
+
+.nav-text {
+    font-size: 1.5rem;
+}
+
+.nav-title {
+    font-family: 'Belanosima', sans-serif;
+}
+
+/********** Index **********/
+.ind {
+    position: relative;
+    z-index: 1;
+}
+
+/* #c {
+    position: fixed;
+    top: 0;
+    left: 0;
+} */
+
+/* .index-body {
+    background-color: #000;
+} */
+
+.intro {
+    /* z-index: 1;
+    position: absolute;
+    text-align: left;
+    padding-top: 5rem; */
+
+    text-align: center;
+    background-color: rgba(252, 252, 252, 0.61);
+    margin: 120px 400px;
+    padding-left: 300rem;
+    padding-right: 300rem;
+    position: relative;
+    z-index: 1;
+}
+
+#indexPage {
+    width: 100%;
+}
+
+.title {
+    font-size: 5rem;
+    margin-left: 5%;
+    position: relative;
+    padding: 1rem 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    color: #0f2330;
+    display: inline-block;
+}
+
+@keyframes titleName {
+    from {
+        transform: rotate(30deg);
+        transform-origin: left;
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.title:hover {
+    animation: titleName .5s linear forwards;
+}
+
+@media screen and (max-width: 1500px) {
+    .title {
+        font-size: 4rem;
+        padding: 0.9rem 0;
+        margin-left: 4%;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .title {
+        font-size: 3.5rem;
+        padding: 0.75rem 0;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 677px) {
+    .title {
+        font-size: 3rem;
+        padding: 0.65rem 0;
+        margin-left: 2.5%;
+    }
+}
+
+@media screen and (max-width: 551px) {
+    .title {
+        font-size: 2.5rem;
+        margin-left: 2.25%;
+    }
+}
+/********** About **********/
+.ab {
+    position: relative;
+    z-index: 1;
+    opacity: 100%;
+}
+
+.pageIntro {
+    position: absolute;
+    background-color: #000000e2;
+    z-index: 0;
+    text-align: center;
+    border-radius: 2rem;
+    width: 38%;
+    height: 280%;
+    margin: 6% 2% 0 690px;
+}
+
+.about-intro {
+    padding: 0 1rem;
+    text-align: left;
+    display: flex;
+    overflow: auto;
+}
+
+.about-content {
+    font-size: 1.5rem;
+    padding: 0.8%;
+    color: #F7F7F7;
+    width: 600px;
+    font-family: 'Belanosima', sans-serif;
+}
+
+.tech-item {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    overflow: auto;
+}
+
+.images {
+    position: relative;
+    padding-top: 5rem;
+}
+
+.imgGallery {
+    /* width: 20rem; */
+    position: absolute;
+    border-radius: 5px;
+    border-width: 0.4rem;
+    border-color: #fff;
+    border-style: solid;
+    width: 200px;
+    height: 260px;
+}
+
+.img1 {
+    margin-top: 15rem;
+    margin-left: 10rem;
+    transform: rotate(15deg);
+    z-index: 1;
+}
+
+.img2 {
+    margin-top: 7rem;
+    margin-left: 5rem;
+    transform: rotate(-13deg);
+    z-index: 0;
+}
+
+.img3 {
+    margin-top: 2rem;
+    margin-left: 12rem;
+    z-index: -1;
+}
+
+.imgGallery:hover {
+    z-index: 100;
+    transform: rotate(0deg);
+}
+
+@media screen and (max-width: 1290px) {
+    .pageIntro {
+        margin-left: 650px;
+    }
+    .about-content {
+        font-size: 1.4rem;
+        /* padding: 0.95rem; */
+    }
+    .imgGallery {
+        width: 200px;
+        border-width: 10px;
+    }
+}
+
+@media screen and (max-width: 1124px) {
+    .pageIntro {
+        margin-left: 600px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about-content {
+        font-size: 1.25rem;
+        /* padding: 0.7rem; */
+    }
+    .pageIntro {
+        margin-left: 550px;
+        /* height: 290%; */
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .pageIntro {
+        margin-left: 500px;
+    }
+}
+
+@media screen and (max-width: 876px) {
+    .about-content {
+        font-size: 1.15rem;
+        padding: 0.35rem;
+    }
+    .pageIntro {
+        margin-left: 480px;
+    }
+    .imgGallery {
+        width: 180px;
+        border-width: 8px;
+    }
+}
+
+@media screen and (max-width: 804px) {
+    .imgGallery {
+        width: 160px;
+        border-width: 6px;
+    }
+    .pageIntro {
+        margin-left: 420px;
+    }
+    .about-content {
+        font-size: 1.1rem;
+        padding: 0rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .about-content {
+        font-size: 1rem;
+    }
+    .pageIntro {
+        margin-left: 360px;
+        margin-top: 15%;
+    }
+    .img1 {
+        margin-left: 8rem;
+    }
+    .img2 {
+        margin-left: 3rem;
+    }
+    .img3 {
+        margin-left: 10rem;
+    }
+    .imgGallery {
+        width: 150px;
+        border-width: 5px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .about-content {
+        font-size: 0.95rem;
+    }
+    .pageIntro {
+        margin-left: 320px;
+        margin-top: 18%;
+    }
+}
+
+/********** Project **********/
+
+/* .card-heading {
+    font-size: 2rem;
+    font-family: 'Acme', sans-serif;
+}
+
+.card-content {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 1.4rem;
+} */
+
+.card-box {
+    margin-left: auto;
+    align-self: center;
+    position: relative;
+    padding: 2% 20%;
+}
+
+.flip-card {
+    margin: 1rem;
+    background-color: transparent;
+    width: 350px;
+    height: 250px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: #6886C5;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back h1 {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 2.5rem;
+}
+
+.flip-card-back p {
+    font-family: 'Acme', sans-serif;
+    font-size: 1.1rem;
+}
+
+/********** Contact **********/
+
+.contact-text {
+    padding: 1rem;
+    color: #fff8e9;
+    font-size: 1.7rem;
+    font-weight: 400;
+    font-family: 'Belanosima', sans-serif;
+}
+
+.contact-box {
+    padding: 5rem;
+    text-align: center;
+}
+
+.contact-head {
+    font-family: 'Pacifico', cursive;
+    /* color: #F7F5F9; */
+    color: #f3eeeee6;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.contact-hello {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 1.7rem;
+}
+
+.contact-footer {
+    text-align: center;
+    padding: 3rem;
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.icon {
+    padding: 0.5rem
+}
+
+#socialbtn {
+    color: #f5f7f9;
+}
+
+/* .btn :hover {
+    background-color: #ffffffc5;
+    width: 100%;
+    height: 5vh;
+    padding-top: 1.2rem;
+} */
+
+#socialbtn:hover {
+    background-color: #f5f7f9;
+    width: 97%;
+    height: 4rem;
+    padding-top: 2rem;
+    padding-left: 5%;
+    border-radius: 0.3rem;
+    color: #161515;
+    font-size: 3.5rem;
+}
+
+.footer {
+    position: relative;
+    text-align: center;
+    padding-top: 10rch;
+}
+
+.footer-heading {
+    color: #F7F5F9;
+    font-family: serif;
+    padding: 1rem;
+}

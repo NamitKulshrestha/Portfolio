@@ -128,6 +128,28 @@ body {
         margin-left: 2.25%;
     }
 }
+
+@media screen and (max-width: 460px) {
+    .title {
+        font-size: 2rem;
+        margin-left: 2%;
+    }
+}
+
+@media screen and (max-width: 369px) {
+    .title {
+        font-size: 1.7rem;
+        margin-left: 1.5%;
+    }
+}
+
+@media screen and (max-width: 305px) {
+    .title {
+        font-size: 1.2rem;
+        margin-left: 1.2%;
+    }
+}
+
 /********** About **********/
 .ab {
     position: relative;
@@ -182,6 +204,10 @@ body {
     border-style: solid;
     width: 200px;
     height: 260px;
+}
+
+#im3 {
+    height: 265%;
 }
 
 .img1 {
@@ -292,7 +318,7 @@ body {
         margin-left: 10rem;
     }
     .imgGallery {
-        width: 150px;
+        width: 140px;
         border-width: 5px;
     }
 }
@@ -302,8 +328,55 @@ body {
         font-size: 0.85rem;
     }
     .pageIntro {
-        margin-left: 320px;
+        margin-left: 310px;
         margin-top: 18%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .pageIntro {
+        margin-left: 240px;
+    }
+    .img1 {
+        margin-left: 4rem;
+    }
+    .img2 {
+        margin-left: 1rem;
+    }
+    .img3 {
+        margin-left: 7rem;
+    }
+    .imgGallery {
+        width: 130px;
+        border-width: 4px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .title {
+        font-size: 0.7rem;
+    }
+    .pageIntro {
+        margin-left: 190px;
+        height: 350%;
+    }
+    .img1 {
+        margin-left: 4rem;
+        margin-top: 12rem;
+    }
+    .img2 {
+        margin-left: 1rem;
+    }
+    .img3 {
+        margin-left: 5rem;
+        margin-top: 3rem;
+    }
+    #im3 {
+        height: 190%;
+    }
+    .imgGallery {
+        width: 100px;
+        border-width: 3px;
     }
 }
 
@@ -319,20 +392,28 @@ body {
     font-size: 1.4rem;
 } */
 
-.card-box {
-    margin-left: auto;
+#card-box {
+    /* margin-left: auto; */
     align-self: center;
-    position: relative;
-    padding: 2% 20%;
+    /* position: relative; */
+}
+
+#projectImg {
+    width: 100%;
+    height: 100%;
 }
 
 .flip-card {
-    margin: 1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    margin-left: 21%;
+    margin-right: 5%;
     background-color: transparent;
     width: 350px;
     height: 250px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    display: inline-flex;
 }
 
 /* This container is needed to position the front and back side */
@@ -382,6 +463,12 @@ body {
     font-size: 1.1rem;
 }
 
+@media screen and (max-width: 450px) {
+    .flip-card {
+        margin: 1rem;
+    }
+}
+
 /********** Contact **********/
 
 .contact-text {
@@ -410,14 +497,6 @@ body {
     font-size: 1.7rem;
 }
 
-.contact-footer {
-    text-align: center;
-    padding: 3rem;
-    background-color: #000;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
 .icon {
     padding: 0.5rem
 }
@@ -447,7 +526,7 @@ body {
 .footer {
     position: relative;
     text-align: center;
-    padding-top: 10rch;
+    padding-top: 2%;
 }
 
 .footer-heading {
